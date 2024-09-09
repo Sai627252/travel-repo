@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #333;
+        }
+        header {
+            background-color: #009688;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #009688;
+            margin-bottom: 20px;
+        }
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .destination {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .destination:hover {
+            transform: scale(1.05);
+        }
+        .destination img {
+            width: 100%;
+            height: auto;
+            border-bottom: 4px solid #009688;
+        }
+        .destination h2 {
+            font-size: 20px;
+            margin: 10px;
+            color: #009688;
+        }
+        .destination p {
+            font-size: 16px;
+            margin: 10px;
+            color: #555;
+        }
+        footer {
+            background-color: #009688;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .destination {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .destination {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Adventures</h1>
+    </header>
+    <div class="container">
+        <h1>Top Travel Destinations</h1>
+        <div class="destinations">
+            <div class="destination">
+                <img src="https://via.placeholder.com/400x300?text=Paris" alt="Paris">
+                <h2>Paris</h2>
+                <p>Experience the romance of Paris, with its stunning architecture, art, and cuisine.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/400x300?text=New+York" alt="New York">
+                <h2>New York</h2>
+                <p>Explore the bustling city of New York, known for its iconic landmarks and vibrant culture.</p>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/400x300?text=Tokyo" alt="Tokyo">
+                <h2>Tokyo</h2>
+                <p>Dive into the vibrant life of Tokyo, a city that blends traditional culture with futuristic technology.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Adventures</p>
+    </footer>
+</body>
+</html>
